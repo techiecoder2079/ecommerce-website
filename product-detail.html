@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/material-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- .....:::::: Start Header Section - Light Header :::::.... -->
+    <header class="header-section pos-relative light-bg sticky-header d-none d-lg-block section-fluid-270">
+        <div class="header-wrapper pos-relative">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <!-- Start Header Logo -->
+                        <a href="index.html" class="header-logo">
+                            <img class="img-fluid" src="logo.png" alt="">
+                        </a>
+                        <!-- End Header Logo -->
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="header-event">
+                            <!-- Start Menu event -->
+                            <div class="menu-event dropdown">
+                                <button class="main-menu-event dropdown-toggle" data-bs-toggle="dropdown"><img
+                                        src="assets/images/icons/icon-open-menu.svg" alt=""><span>Menu</span><img
+                                        src="assets/images/icons/icon-arrow-drop-down.svg" alt=""></button>
+                                <ul class="mainmenu-nav dropdown-menu">
+                                    <li class="menu-items">
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#">Men <span class="material-icons">arrow_right</span></a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">Top Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">T-shirts</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Sweatshirts</a></li>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Suits</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Bottomwear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                    <li><a href="#">Shorts</a></li>
+                                                    <li><a href="#">Joggers</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Personal care</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Smart Gadgets</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#">Women <span class="material-icons">arrow_right</span></a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">India Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Kurtas</a></li>
+                                                    <li><a href="#">Ethnic Wear</a></li>
+                                                    <li><a href="#">Leggings</a></li>
+                                                    <li><a href="#">Palazoos</a></li>
+                                                    <li><a href="#">Duppatta</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Western Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Dresses</a></li>
+                                                    <li><a href="#">Jumpsuits</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Jewellery</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Beauty Care</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#">Beauty <span class="material-icons">arrow_right</span></a>
+                                        <div class="has-dropdown">
+                                            <div class="menu-content">
+                                                <h6 class="title">Buy From Top Brands</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Lakme</a></li>
+                                                    <li><a href="#">LOreal</a></li>
+                                                    <li><a href="#">Mamaearth</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items"><a href="#">Home & Living</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="search-event">
+                                <input class="header-search" type="search" placeholder="Search">
+                                <button class="header-search-btn" type="submit"><img
+                                        src="assets/images/icons/icon-search.svg" alt=""></button>
+                            </div>
+                            <!-- End Menu event -->
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-action">
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#wishlistOffcanvas"><img src="assets/images/icons/icon-heart-dark.svg"
+                                    alt=""><span class="count-tag">03</span></button>
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#addcartOffcanvas"><img
+                                    src="assets/images/icons/icon-shopping-bag-dark.svg" alt=""><span
+                                    class="item-count item-count--light">03 ITEMS</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- .....:::::: End Header Section - Light Header :::::.... -->
+
+    <!-- .....:::::: Start Mobile Header Section :::::.... -->
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="mobile-logo">
+                        <a href="index.html"><img src="logo.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <div class="mobile-action-link text-end d-flex ">
+                        <button data-bs-toggle="offcanvas" data-bs-target="#toggleMenu"><span
+                                class="material-icons">menu</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .....:::::: Start MobileHeader Section :::::.... -->
+
+    <!--  .....::::: Start Offcanvas Mobile Menu Section :::::.... -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-center ">
+                <a href="#" class="header-action-item header-action-wishlist">
+                    <img src="assets/images/icons/icon-heart-dark.svg" alt="">
+                    <span class="count-tag">03</span>
+                </a>
+                <a href="cart.html" class="header-action-item header-action-wishlist">
+                    <img src="assets/images/icons/icon-shopping-bag-dark.svg" alt="">
+                    <span class="item-count item-count--light">03 ITEMS</span>
+                </a>
+            </div>
+
+            <div class="header-event mobile-search my-5">
+                <div class="search-event">
+                    <input class="header-search" type="search">
+                    <button class="header-search-btn" type="submit">
+                        <img src="assets/images/icons/icon-search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Start Offcanvas Mobile Menu Wrapper -->
+            <div class="offcanvas-mobile-menu-wrapper">
+                <!-- Start Mobile Menu  -->
+                <div class="mobile-menu-bottom">
+                    <!-- Start Mobile Menu Nav -->
+                    <div class="offcanvas-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><span>Home</span></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span>Men</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Top Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">T-shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Sweatshirts</a></li>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Bottomwear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <ul class="submenu">
+                                                <li><a href="#">Jeans</a></li>
+                                                <li><a href="#">Trousers</a></li>
+                                                <li><a href="#">Shorts</a></li>
+                                                <li><a href="#">Joggers</a></li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Personal care</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Smart Gadgets</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Women</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Indian Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Kurtas</a></li>
+                                            <li><a href="#">Ethnic Wear</a></li>
+                                            <li><a href="#">Leggings</a></li>
+                                            <li><a href="#">Palazoos</a></li>
+                                            <li><a href="#">Duppatta</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Western Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <ul class="submenu">
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Jumpsuits</a></li>
+                                                <li><a href="#">Tops</a></li>
+                                                <li><a href="#">Jeans</a></li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Jewellery</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Beauty Care</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Beauty</span></a>
+
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="about.html"><span>Lakme</span></a></li>
+                                    <li><a href="faq.html">LOreal</a></li>
+                                    <li><a href="error.html">Mamaearth</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Home & Living</span></a>
+                            </li>
+                        </ul>
+                    </div> <!-- End Mobile Menu Nav -->
+                </div> <!-- End Mobile Menu -->
+
+                <!-- Start Mobile contact Info -->
+                <div class="mobile-contact-info text-center">
+                    <ul class="social-link">
+                        <li>
+                            <a href="#">
+                                <img class="icon-svg" src="assets/images/icons/icon-facebook-f-dark.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon-svg" src="assets/images/icons/icon-twitter-dark.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon-svg" src="assets/images/icons/icon-pinterest-p-dark.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon-svg" src="assets/images/icons/icon-dribbble-dark.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Mobile contact Info -->
+
+            </div> <!-- End Offcanvas Mobile Menu Wrapper -->
+        </div>
+    </div>
+    <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
+
+    <!--  .....::::: Start Wishlist Offcanvas Section :::::.... -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Wishlist</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="img/small/small1.png" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="assets/images/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="img/small/small2.png" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="assets/images/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="img/small/small3.png" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="assets/images/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="offcanvas-action-link">
+                <a href="#" class="btn">View wishlist</a>
+            </div>
+        </div>
+    </div>
+    <!-- ...:::: End Wishlist Offcanvas Section:::... -->
+
+
+    <!--  .....::::: Start Add Cart Offcanvas Section :::::.... -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addcartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Add Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="img/small/small1.png" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="assets/images/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="img/small/small3.png" alt="" class="offcanvas-wishlist-image">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="assets/images/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="img/small/small4.png" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Crop Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 899.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="assets/images/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="offcanvas-action-link">
+                <a href="#" class="btn">Add Cart</a>
+                <a href="#" class="btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- ...:::: End Add Cart Offcanvas Section:::... -->
+
+
+    <!-- ...::: Strat Breadcrumb Section :::... -->
+    <div class="breadcrumb-section">
+        <div class="box-wrapper">
+            <div class="breadcrumb-wrapper breadcrumb-wrapper--style-1 pos-relative">
+                <div class="breadcrumb-bg">
+                    <img src="img/bread.jpg" alt="">
+                </div>
+                <div class="breadcrumb-content section-fluid-270">
+                    <div class="breadcrumb-wrapper">
+                        <div class="content">
+                            <span class="title-tag">BEST DEAL ON GOING</span>
+                            <h2 class="title"><span class="text-mark">Hurry!</span> <br> Get your Favourite now</h2>
+                        </div>
+                        <ul class="breadcrumb-nav">
+                            <li><a href="shop-grid-sidebar-left.html">Shop</a></li>
+                            <li>Product Page</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: End Breadcrumb Section :::... -->
+
+
+    <!-- ...::: Strat Product Gallery Section :::... -->
+    <div class="product-gallery-info-section section-fluid-270 section-top-gap-100">
+        <div class="box-wrapper">
+            <div class="product-gallery-info-wrapper">
+                <div class="container-fluid">
+                    <div class="row flex-column-reverse flex-lg-row">
+                        <div class="col-xl-3 col-lg-3">
+                            <!-- Start Sidebar Area -->
+                            <div class="siderbar-section">
+                                <!-- Start Single Sidebar Widget -->
+                                <div class="sidebar-single-widget">
+                                    <h6 class="sidebar-title title-border title-border">Categories</h6>
+                                    <div class="sidebar-content">
+                                        <div class="filter-type-select">
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox-default" for="men">
+                                                        <input type="checkbox" id="men">
+                                                        <span>Men</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="women">
+                                                        <input type="checkbox" id="women">
+                                                        <span>Women</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="kid">
+                                                        <input type="checkbox" id="kid">
+                                                        <span>Kid</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="fashion">
+                                                        <input type="checkbox" id="fashion">
+                                                        <span>Fashion</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="new-arrival">
+                                                        <input type="checkbox" id="new-arrival">
+                                                        <span>New Arrival</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <!-- End Single Sidebar Widget -->
+
+                                <!-- Start Single Sidebar Widget -->
+                                <div class="sidebar-single-widget">
+                                    <h6 class="sidebar-title title-border">Color</h6>
+                                    <div class="sidebar-content">
+                                        <div class="filter-type-select">
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox-default" for="red">
+                                                        <input type="checkbox" id="red">
+                                                        <span>Red</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="green">
+                                                        <input type="checkbox" id="green">
+                                                        <span>Green</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="blue">
+                                                        <input type="checkbox" id="blue">
+                                                        <span>Blue</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="black">
+                                                        <input type="checkbox" id="black">
+                                                        <span>Black</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="pink">
+                                                        <input type="checkbox" id="pink">
+                                                        <span>Pink</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <!-- End Single Sidebar Widget -->
+
+                                <!-- Start Single Sidebar Widget -->
+                                <div class="sidebar-single-widget">
+                                    <h6 class="sidebar-title title-border">FILTER BY PRICE</h6>
+                                    <div class="sidebar-content">
+                                        <input type="text" class="js-range-slider" name="my_range" value=""
+                                            data-type="double" data-min="0" data-max="7000" data-from="500"
+                                            data-to="5000" />
+                                    </div>
+                                </div> <!-- End Single Sidebar Widget -->
+
+                                <!-- Start Single Sidebar Widget -->
+                                <div class="sidebar-single-widget">
+                                    <h6 class="sidebar-title title-border">Material</h6>
+                                    <div class="sidebar-content">
+                                        <div class="filter-type-select">
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox-default" for="fabric">
+                                                        <input type="checkbox" id="fabric">
+                                                        <span>Fabric</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="wood">
+                                                        <input type="checkbox" id="wood">
+                                                        <span>Wood</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-default" for="cotton">
+                                                        <input type="checkbox" id="cotton">
+                                                        <span>Cotton</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <!-- End Single Sidebar Widget -->
+
+                                <!-- Start Single Sidebar Widget -->
+                                <div class="sidebar-single-widget">
+                                    <div class="sidebar-content">
+                                        <div class="banner-animate--flash">
+                                            <a href="product-details-default.html"
+                                                class="sidebar-banner img-responsive">
+                                                <img src="img/banner-side.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> <!-- End Single Sidebar Widget -->
+
+                                <!-- Start Single Sidebar Widget -->
+                                <div class="sidebar-single-widget">
+                                    <h6 class="sidebar-title title-border">Tags</h6>
+                                    <div class="sidebar-content">
+                                        <ul class="tag-link">
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Perfume</a></li>
+                                            <li><a href="#">Grooming</a></li>
+                                            <li><a href="#">Toys</a></li>
+                                            <li><a href="#">Clothes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Single Sidebar Widget -->
+                            </div> <!-- End Sidebar Area -->
+                        </div>
+                        <div class="col-xl-8 col-lg-7 offset-lg-1  ">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                    <!-- Start Product Gallert - Thumbnail Style -->
+                                    <div class="product-gallery product-gallery--style-thumbnail-bottom">
+                                        <div class="row flex-column-reverse">
+                                            <div class="col-md-12">
+                                                <!-- Start Product Thumbnail -->
+                                                <ul class="product-thumbnail-image nav">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" data-bs-toggle="tab"
+                                                            data-bs-target="#img-1" type="button">
+                                                            <span class="thumb">
+                                                                <img class="img-fluid" src="s1.webp" alt="">
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" data-bs-toggle="tab"
+                                                            data-bs-target="#img-2" type="button">
+                                                            <span class="thumb">
+                                                                <img class="img-fluid" src="s2.webp" alt="">
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" data-bs-toggle="tab"
+                                                            data-bs-target="#img-3" type="button">
+                                                            <span class="thumb">
+                                                                <img class="img-fluid" src="s3.webp" alt="">
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <!-- End Product Thumbnail -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <!-- Start Product Large Image -->
+                                                <div class="product-large-image tab-content">
+                                                    <div class="tab-pane fade show active" id="img-1" role="tabpanel">
+                                                        <div class="image">
+                                                            <img class="img-fluid" src="s1.webp" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="img-2" role="tabpanel">
+                                                        <div class="image">
+                                                            <img class="img-fluid" src="s2.webp" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="img-3" role="tabpanel">
+                                                        <div class="image">
+                                                            <img class="img-fluid" src="s3.webp" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Product Large Image -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Product Gallert - Tab Style -->
+                                </div>
+                                <!-- Start Product Details Content -->
+                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                    <!-- Start Product Content -->
+                                    <div class="product-content">
+                                        <span class="catagory">Men</span>
+                                        <h2 class="title">Luxure by Louis Philippe</h2>
+                                        <span class="author">Slim-Fit Formal 2-Piece Suit</span>
+                                        <div class="bottom">
+                                            <ul class="review-star">
+                                                <li class="fill"><span class="material-icons">star</span></li>
+                                                <li class="fill"><span class="material-icons">star</span></li>
+                                                <li class="fill"><span class="material-icons">star</span></li>
+                                                <li class="fill"><span class="material-icons">star</span></li>
+                                                <li class="fill"><span class="material-icons">star_half</span></li>
+                                            </ul>
+
+                                            <a href="wishlist.html" class="btn btn-sm btn-default">Wishlist</a>
+                                        </div>
+
+                                        <span class="price">Rs. 21249 <del>Rs. 24999</del></span>
+
+                                        <div class="product-variables">
+                                            <!-- Start Product Single Variable -->
+                                            <div class="product-variable-color">
+                                                <h6 class="title">Color</h6>
+                                                <ul class="color-select">
+                                                    <li>
+                                                        <label class="checkbox-default" for="color-red">
+                                                            <input type="checkbox" id="color-red">
+                                                            <span>Red</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox-default" for="color-green">
+                                                            <input type="checkbox" id="color-green">
+                                                            <span>Green</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox-default" for="color-blue">
+                                                            <input type="checkbox" id="color-blue">
+                                                            <span>Blue</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox-default" for="color-black">
+                                                            <input type="checkbox" id="color-black">
+                                                            <span>Black</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- End Product Single Variable -->
+
+                                            <ul class="variable-items">
+                                                <li class="variable-single-items type-select">
+                                                    <select>
+                                                        <option value="S">Size: S</option>
+                                                        <option value="M">Size: M</option>
+                                                        <option value="L">Size: L</option>
+                                                        <option value="XL" selected>Size: XL</option>
+                                                        <option value="XXl">Size: XXL</option>
+                                                    </select>
+                                                </li>
+                                                <li class="variable-single-items">
+                                                    <div class="num-block skin-2">
+                                                        <div class="num-in">
+                                                            <span class="minus dis"></span>
+                                                            <input type="text" class="in-num" value="1" readonly="">
+                                                            <span class="plus"></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="variable-single-items">
+                                                    <a href="cart.html" class="btn btn-sm btn-default">Add To Cart</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <!-- End Product Content -->
+                                </div>
+                                <!-- End Product Details Content -->
+                                <!-- Start Product Description Section -->
+                                <div class="col-12">
+                                    <div class="product-description-content section-top-gap-120">
+                                        <h6 class="title">Description</h6>
+                                        <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                            quibusdam animi aliquid corporis nulla assumenda, eveniet amet, ipsam eos,
+                                            autem magni nihil? Quas corporis possimus qui dolores dicta aliquam enim.
+                                        </p>
+
+                                        <p>Navy Blue Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                                            facilis in cum dicta sit voluptates libero, id quod, atque aliquam esse
+                                            placeat velit distinctio labore!</p>
+
+                                        <ul class="items-info-list">
+                                            <li>Striped Lorem ipsum dolor sit amet.</li>
+                                            <li>Slim Fit Lorem ipsum dolor sit amet.</li>
+                                            <li>Formal Lorem ipsum dolor sit.</li>
+                                            <li>Pure wool Lorem ipsum dolor sit amet.</li>
+                                        </ul>
+
+                                        <p>Product Code : 14293888</p>
+
+                                        <div class="social-links">
+                                            <span class="text">Share:</span>
+                                            <div class="items">
+                                                <a href="https://example.com/"><img class="icon-svg"
+                                                        src="assets/images/icons/icon-facebook-f-dark.svg" alt=""></a>
+                                                <a href="https://example.com/"><img class="icon-svg"
+                                                        src="assets/images/icons/icon-twitter-dark.svg" alt=""></a>
+                                                <a href="https://example.com/"><img class="icon-svg"
+                                                        src="assets/images/icons/icon-pinterest-p-dark.svg" alt=""></a>
+                                                <a href="https://example.com/"><img class="icon-svg"
+                                                        src="assets/images/icons/icon-dribbble-dark.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Description Section -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: End Product Gallery Section :::... -->
+
+
+    <!-- ...::: Strat Product Section :::... -->
+    <div class="product-item-section  section-fluid-270 section-top-gap-100">
+        <div class="box-wrapper">
+            <div class="section-wrapper">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center flex-warp section-content-gap-60">
+                        <div class="col-xxl-4 col-lg-5 col-md-6 col-sm-8 col-auto me-5">
+                            <div class="section-content">
+                                <h2 class="section-title">Exclusive Collection</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="top-slider-buttons">
+                                <!-- If we need navigation buttons -->
+                                <div class="slider-buttons">
+                                    <div class="slider-button button-prev"><span
+                                            class="material-icons">arrow_left</span></div>
+                                    <div class="slider-button button-next"><span
+                                            class="material-icons">arrow_right</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Slider main container -->
+                            <div class="product-slider-3grids-1row">
+                                <div class="swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Start Product Single Item - Style 1 -->
+                                        <div class="product-single-item-style-1 swiper-slide">
+                                            <a href="#" class="image img-responsive">
+                                                <img class="img-fluid" src="img/product/p1.png" loading="lazy"
+                                                    alt="product-image">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="top">
+                                                    <span class="catagory">MEN</span>
+                                                    <h4 class="title"><a href="#">Puma
+                                                            Tshirt</a></h4>
+                                                    <span class="price">Rs. 4799
+                                                        <del>Rs. 5999</del></span>
+                                                </div>
+                                                <div class="bottom">
+                                                    <ul class="review-star">
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star_half</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="product-event-items">
+                                                        <a href="#" class="btn cart-btn"><span
+                                                                class="material-icons">shopping_cart_border</span></a>
+                                                        <a href="#" class="btn wishlist-btn"><span
+                                                                class="material-icons">favorite_border</span></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Product Single Item - Style 1 -->
+                                        <!-- Start Product Single Item - Style 1 -->
+                                        <div class="product-single-item-style-1 swiper-slide">
+                                            <a href="#" class="image img-responsive">
+                                                <img class="img-fluid" src="img/product/p14.webp" width="435"
+                                                    height="350" loading="lazy" alt="product-image">
+                                            </a>
+                                            <div class="content">
+                                                <div class="top">
+                                                    <span class="catagory">MEN</span>
+                                                    <h4 class="title"><a href="#">Nike
+                                                            Tshirt</a></h4>
+                                                    <span class="price">Rs. 4695</span>
+                                                </div>
+                                                <div class="bottom">
+                                                    <ul class="review-star">
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star_half</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="product-event-items">
+                                                        <a href="#" class="btn cart-btn"><span
+                                                                class="material-icons">shopping_cart_border</span></a>
+                                                        <a href="#" class="btn wishlist-btn"><span
+                                                                class="material-icons">favorite_border</span></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Product Single Item - Style 1 -->
+                                        <!-- Start Product Single Item - Style 1 -->
+                                        <div class="product-single-item-style-1 swiper-slide">
+                                            <a href="#" class="image img-responsive">
+                                                <img class="img-fluid" src="img/product/p13.webp" width="435"
+                                                    height="350" loading="lazy" alt="product-image">
+                                            </a>
+                                            <div class="content">
+                                                <div class="top">
+                                                    <span class="catagory">WOMEN</span>
+                                                    <h4 class="title"><a href="#">Niza
+                                                            Floral Top</a></h4>
+                                                    <span class="price">Rs. 6932</span>
+                                                </div>
+                                                <div class="bottom">
+                                                    <ul class="review-star">
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star_half</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="product-event-items">
+                                                        <a href="#" class="btn cart-btn"><span
+                                                                class="material-icons">shopping_cart_border</span></a>
+                                                        <a href="#" class="btn wishlist-btn"><span
+                                                                class="material-icons">favorite_border</span></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Product Single Item - Style 1 -->
+                                        <!-- Start Product Single Item - Style 1 -->
+                                        <div class="product-single-item-style-1 swiper-slide">
+                                            <a href="#" class="image img-responsive">
+                                                <img class="img-fluid" src="img/product/p4.webp" width="435"
+                                                    height="350" loading="lazy" alt="product-image">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-yellow">40%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="top">
+                                                    <span class="catagory">Kids</span>
+                                                    <h4 class="title"><a href="#">H&M
+                                                            Henley Tshirt</a></h4>
+                                                    <span class="price">Rs. 599
+                                                        <del>Rs. 899</del></span>
+                                                </div>
+                                                <div class="bottom">
+                                                    <ul class="review-star">
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star_half</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="product-event-items">
+                                                        <a href="#" class="btn cart-btn"><span
+                                                                class="material-icons">shopping_cart_border</span></a>
+                                                        <a href="#" class="btn wishlist-btn"><span
+                                                                class="material-icons">favorite_border</span></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Product Single Item - Style 1 -->
+                                        <!-- Start Product Single Item - Style 1 -->
+                                        <div class="product-single-item-style-1 swiper-slide">
+                                            <a href="#" class="image img-responsive">
+                                                <img class="img-fluid" src="img/product/p5.png" width="435" height="350"
+                                                    loading="lazy" alt="product-image">
+                                            </a>
+                                            <div class="content">
+                                                <div class="top">
+                                                    <span class="catagory">Men</span>
+                                                    <h4 class="title"><a href="#">TH
+                                                            Sweatshirt</a></h4>
+                                                    <span class="price">Rs. 7999</span>
+                                                </div>
+                                                <div class="bottom">
+                                                    <ul class="review-star">
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star_half</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="product-event-items">
+                                                        <a href="#" class="btn cart-btn"><span
+                                                                class="material-icons">shopping_cart_border</span></a>
+                                                        <a href="#" class="btn wishlist-btn"><span
+                                                                class="material-icons">favorite_border</span></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Product Single Item - Style 1 -->
+                                        <!-- Start Product Single Item - Style 1 -->
+                                        <div class="product-single-item-style-1 swiper-slide">
+                                            <a href="#" class="image img-responsive">
+                                                <img class="img-fluid" src="img/product/p6.png" width="435" height="350"
+                                                    loading="lazy" alt="product-image">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">16%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="top">
+                                                    <span class="catagory">Men</span>
+                                                    <h4 class="title"><a href="#">Allen
+                                                            Solly Suit</a></h4>
+                                                    <span class="price">Rs. 7559
+                                                        <del>Rs. 8999</del></span>
+                                                </div>
+                                                <div class="bottom">
+                                                    <ul class="review-star">
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star</span></li>
+                                                        <li class="fill"><span class="material-icons">star_half</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="product-event-items">
+                                                        <a href="#" class="btn cart-btn"><span
+                                                                class="material-icons">shopping_cart_border</span></a>
+                                                        <a href="#" class="btn wishlist-btn"><span
+                                                                class="material-icons">favorite_border</span></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- End Product Single Item - Style 1 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Strat Product Section :::... -->
+
+
+
+    <!-- ...::: Strat Footer Section - Footer Light :::... -->
+    <footer class="footer-section footer-section-style-1 section-top-gap-120">
+        <div class="box-wrapper">
+            <div class="footer-wrapper section-fluid-270">
+                <div class="container-fluid">
+
+                    <!-- Start Footer Top  -->
+                    <div class="footer-top">
+                        <div class="footer-top-left">
+                            <div class="footer-contact-items">
+                                <a class="icon-left" href="tel:+91-9898989898"><img class="icon-svg"
+                                        src="assets/images/icons/icon-ios-call-dark.svg" alt="">989 9898 989</a>
+                                <a class="icon-left" href="mailto:shopping@gmail.com"><img class="icon-svg"
+                                        src="assets/images/icons/icon-mail-open-dark.svg" alt="">shopping@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="footer-top-right">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img class="icon-svg" src="assets/images/icons/icon-facebook-f-dark.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img class="icon-svg" src="assets/images/icons/icon-twitter-dark.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img class="icon-svg" src="assets/images/icons/icon-pinterest-p-dark.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img class="icon-svg" src="assets/images/icons/icon-dribbble-dark.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Footer Top  -->
+
+                    <!-- Start Footer Center  -->
+                    <div class="footer-center">
+                        <div class="footer-widgets-items">
+                            <!-- Start Footer Widget Single Item -->
+                            <div class="footer-widgets-single-item footer-widgets-single-item--light">
+                                <h5 class="title">Product</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-1">Product</h5>
+                                <div id="dividerId-1" class="widget-collapse-body collapse">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Kids</a></li>
+                                        <li><a href="#">Home & Living</a></li>
+                                        <li><a href="#">Beauty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget Single Item -->
+                            <!-- Start Footer Widget Single Item -->
+                            <div class="footer-widgets-single-item footer-widgets-single-item--light">
+                                <h5 class="title">Offer</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-2">Offer</h5>
+                                <div id="dividerId-2" class="widget-collapse-body collapse">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Insider Points</a></li>
+                                        <li><a href="#">Coupons</a></li>
+                                        <li><a href="#">Birthday Special</a></li>
+                                        <li><a href="#">Festive Season</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget Single Item -->
+                            <!-- Start Footer Widget Single Item -->
+                            <div class="footer-widgets-single-item footer-widgets-single-item--light">
+                                <h5 class="title">Information</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-3">Information</h5>
+                                <div id="dividerId-3" class="widget-collapse-body collapse">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Conatc Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">T&C</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                        <li><a href="#">Track Orders</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget Single Item -->
+                            <!-- Start Footer Widget Single Item -->
+                            <div class="footer-widgets-single-item footer-widgets-single-item--light">
+                                <h5 class="title">Useful Links</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-4">Useful Links</h5>
+                                <div id="dividerId-4" class="widget-collapse-body collapse">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Shipping</a></li>
+                                        <li><a href="#">Cancellation</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget Single Item -->
+                        </div>
+                    </div>
+                    <!-- End Footer Center  -->
+
+                    <!-- Start Footer Bottom -->
+                    <div class="footer-bottom">
+                        <p class="copyright-text copyright-text--light">&copy; 2021 . Made with <span
+                                class="material-icons">favorite</span> by <a href="#">Techie Coder</a></p>
+                        <a href="#" class="payment-logo"><img class="img-fluid"
+                                src="assets/images/company-logo/payment-logo.png" alt=""></a>
+                    </div>
+                    <!-- End Footer Bottom -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ...::: End Footer Section Section - Footer Light :::... -->
+
+
+    <!-- Scroll To button -->
+    <div id="scroll-to-top" class="scroll-to-top"><span class="material-icons-outlined">expand_less</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script> -->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="assets/js/plugins/jquery.nice-select.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
+    <!-- <script src="assets/js/plugins/venobox.min.js"></script> -->
+    <!-- <script src="assets/js/plugins/ajax-mail.js"></script> -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
